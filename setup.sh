@@ -30,8 +30,8 @@ printf $ENV > .env
 if [ "$1" = "--docker" ]; then
   printf $ENV > .env.docker
   source .env.docker
-  docker build --build-arg NODE_ENV=$NODE_ENV -t agentgpt .
-  docker run -d --name agentgpt -p 3000:3000 -v $(pwd)/db:/app/db agentgpt
+  docker build --build-arg NODE_ENV=$NODE_ENV -t g .
+  docker run -d --name g -p 3000:3000 -v $(pwd)/db:/app/db g
 else
   printf $ENV > .env
   ./prisma/useSqlite.sh

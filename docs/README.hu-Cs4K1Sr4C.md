@@ -1,18 +1,18 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/reworkd/AgentGPT/main/public/banner.png?token=GHSAT0AAAAAAB7JND3U3VGGF3UYYHGYO4RAZBSDJAQ" height="300"/>
+  <img src="https://raw.githubusercontent.com/reworkd/g/main/public/banner.png?token=GHSAT0AAAAAAB7JND3U3VGGF3UYYHGYO4RAZBSDJAQ" height="300"/>
 </p>
 <p align="center">
   <em>🤖 Szerelje össze, konfigurálja és telepítse az autonóm AI-ügynököket a böngészőjében. 🤖 </em>
 </p>
 <p align="center">
     <img alt="Node version" src="https://img.shields.io/static/v1?label=node&message=%20%3E=16.0.0&logo=node.js&color=2334D058" />
-      <a href="https://github.com/reworkd/AgentGPT/blob/master/README.md"><img src="https://img.shields.io/badge/lang-English-blue.svg" alt="English"></a>
-  <a href="https://github.com/reworkd/AgentGPT/blob/master/docs/README.zh-HANS.md"><img src="https://img.shields.io/badge/lang-简体中文-red.svg" alt="简体中文"></a>
-  <a href="https://github.com/reworkd/AgentGPT/blob/master/docs/README.hu-Cs4K1Sr4C.md"><img src="https://img.shields.io/badge/lang-Hungarian-red.svg" alt="Hungarian"></a>
+      <a href="https://github.com/reworkd/g/blob/master/README.md"><img src="https://img.shields.io/badge/lang-English-blue.svg" alt="English"></a>
+  <a href="https://github.com/reworkd/g/blob/master/docs/README.zh-HANS.md"><img src="https://img.shields.io/badge/lang-简体中文-red.svg" alt="简体中文"></a>
+  <a href="https://github.com/reworkd/g/blob/master/docs/README.hu-Cs4K1Sr4C.md"><img src="https://img.shields.io/badge/lang-Hungarian-red.svg" alt="Hungarian"></a>
 </p>
 
 <p align="center">
-<a href="https://agentgpt.reworkd.ai">🔗 Gyorshivatkozás</a>
+<a href="https://g.reworkd.ai">🔗 Gyorshivatkozás</a>
 <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
 <a href="#-getting-started">🤝 Hozzájárulás</a>
 <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
@@ -24,11 +24,11 @@
 ---
 
 <h2 align="center">
-💝 Támogassa az AgentGPT fejlesztését!! 💝
+💝 Támogassa az g fejlesztését!! 💝
 </h2>
 
 <p align="center">
-Csatlakozzon hozzánk, az AgentGPT fejlesztéséhez, egy nyílt forráskódú projekthez, amely az AI automatizálás határait feszegeti! Kihívásokkal nézünk szembe a működési költségek fedezése 💸, beleértve a házon belüli API-t és egyéb infrastrukturális költségeket, amelyek az előrejelzések szerint körülbelül napi 150 USD-ra nőnek. 💳🤕 Az Ön szponzorálása elősegítené a fejlődést azáltal, hogy segít nekünk az erőforrások bővítésében, a funkciók és a funkcionalitás bővítésében, valamint az izgalmas projekt folytatásában! 🚀
+Csatlakozzon hozzánk, az g fejlesztéséhez, egy nyílt forráskódú projekthez, amely az AI automatizálás határait feszegeti! Kihívásokkal nézünk szembe a működési költségek fedezése 💸, beleértve a házon belüli API-t és egyéb infrastrukturális költségeket, amelyek az előrejelzések szerint körülbelül napi 150 USD-ra nőnek. 💳🤕 Az Ön szponzorálása elősegítené a fejlődést azáltal, hogy segít nekünk az erőforrások bővítésében, a funkciók és a funkcionalitás bővítésében, valamint az izgalmas projekt folytatásában! 🚀
 </p>
 
 <p align="center">
@@ -136,7 +136,7 @@ Ennek az ingyenes, nyílt forráskódú projektnek a szponzorálásával nem csa
 
 ---
 
-Az AgentGPT lehetővé teszi az automatizált AI-ügynökök konfigurálását és üzembe helyezését.
+Az g lehetővé teszi az automatizált AI-ügynökök konfigurálását és üzembe helyezését.
 Nevezze el saját egyéni mesterséges intelligenciáját, és tegye lehetővé, hogy bármilyen célt elérjen.
 Megkísérli elérni a célt az elvégzendő feladatok átgondolásával, végrehajtásával és az eredményekből való tanulással 🚀.
 
@@ -169,7 +169,7 @@ Hamarosan még több jön...
 
 ### 🐳 Docker beállítása
 
-Az AgentGPT helyi futtatásának legegyszerűbb módja a Docker használata.
+Az g helyi futtatásának legegyszerűbb módja a Docker használata.
 Egy kényelmes beállítási szkriptet biztosítunk az induláshoz.
 
 ```bash
@@ -190,24 +190,24 @@ Ha helyben szeretné fejleszteni az Agent GPT-t, a legegyszerűbb módja a mell�
 
 1. Elágaztatni a tárat
 
-- [Elágaztatás](https://github.com/reworkd/AgentGPT/fork).
+- [Elágaztatás](https://github.com/reworkd/g/fork).
 
 2. Klónozni a tárolót:
 
 ```bash
-git clone git@github.com:YOU_USER/AgentGPT.git
+git clone git@github.com:YOU_USER/g.git
 ```
 
 3. Függőségek telepítése:
 
 ```bash
-cd AgentGPT
+cd g
 npm install
 ```
 
 4. Hozzon létre egy **.env** fájlt a következő tartalommal:
 
-> 🚧 A környezeti változóknak meg kell egyeznie a következő [sémával](https://github.com/reworkd/AgentGPT/blob/main/src/env/schema.mjs).
+> 🚧 A környezeti változóknak meg kell egyeznie a következő [sémával](https://github.com/reworkd/g/blob/main/src/env/schema.mjs).
 
 ```bash
 # Telepítési környezet:
@@ -241,7 +241,7 @@ npm run dev
 
 ### 🚀 GitHub Codespaces
 
-Állítsa be azonnal az AgentGPT-t a felhőben a [GitHub Codespaces](https://github.com/features/codespaces) használatával.
+Állítsa be azonnal az g-t a felhőben a [GitHub Codespaces](https://github.com/features/codespaces) használatával.
 
 1. A GitHub-tárhelyen kattintson a zöld "Kód" gombra, és válassza a "Kódterek" lehetőséget.
 2. Hozzon létre egy új kódteret, vagy válasszon egy előzőt, amelyet már létrehozott.
@@ -250,8 +250,8 @@ npm run dev
 5. Amikor a terminál kéri, adja hozzá OpenAI API-kulcsát.
 6. Kattintson a "Megnyitás böngészőben" gombra, amikor az összeállítási folyamat befejeződött.
 
-- Az AgentGPT leállításához írja be a Ctrl+C billentyűkombinációt a terminálba.
-- Az AgentGPT újraindításához futtassa az "npm run dev" parancsot a terminálban.
+- Az g leállításához írja be a Ctrl+C billentyűkombinációt a terminálba.
+- Az g újraindításához futtassa az "npm run dev" parancsot a terminálban.
 
 Futtassa a projektet 🥳
 
@@ -319,4 +319,3 @@ npm run dev
   </a>
 
 </div>
-

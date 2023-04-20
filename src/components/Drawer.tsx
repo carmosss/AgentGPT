@@ -68,14 +68,14 @@ const Drawer = ({
         id="drawer"
         className={clsx(
           showDrawer ? "translate-x-0" : "-translate-x-full",
-          "z-30 m-0 h-screen w-72 flex-col justify-between bg-zinc-900 p-3 font-mono text-white shadow-3xl transition-all",
+          "z-30 m-0 h-screen w-72 flex-col justify-between bg-zinc-900 p-3 font-sans text-white shadow-3xl transition-all",
           "fixed top-0 md:sticky",
           "flex md:translate-x-0"
         )}
       >
         <div className="flex flex-col gap-1 overflow-hidden">
           <div className="mb-2 flex justify-center gap-2">
-            My Agent(s)
+            {/* My Agent(s) */}
             <button
               className="z-40 rounded-md border-2 border-white/20 bg-zinc-900 p-2 text-white hover:bg-zinc-700 md:hidden"
               onClick={toggleDrawer}
@@ -96,13 +96,11 @@ const Drawer = ({
 
             {status === "unauthenticated" && (
               <div>
-                Sign in to be able to save agents and manage your account!
-              </div>
+sign in              </div>
             )}
             {status === "authenticated" && userAgents.length === 0 && (
               <div>
-                You need to create and save your first agent before anything
-                shows up here!
+               -
               </div>
             )}
           </ul>
@@ -121,15 +119,15 @@ const Drawer = ({
           {env.NEXT_PUBLIC_FF_AUTH_ENABLED && (
             <AuthItem session={session} signIn={signIn} signOut={signOut} />
           )}
-          <DrawerItem
+          {/* <DrawerItem
             icon={<FaQuestionCircle />}
             text="Help"
             onClick={showHelp}
-          />
+          /> */}
           <DrawerItem icon={<FaCog />} text="Settings" onClick={showSettings} />
           <hr className="my-2 border-white/20" />
           <div className="flex flex-row items-center">
-            <DrawerItem
+            {/* <DrawerItem
               icon={<FaDiscord size={30} />}
               text="Discord"
               href="https://discord.gg/jdSBAnmdnY"
@@ -146,10 +144,10 @@ const Drawer = ({
             <DrawerItem
               icon={<FaGithub size={30} />}
               text="GitHub"
-              href="https://github.com/reworkd/AgentGPT"
+              href="https://github.com/reworkd/g"
               target="_blank"
               small
-            />
+            /> */}
           </div>
         </div>
       </div>

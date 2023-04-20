@@ -1,18 +1,18 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/reworkd/AgentGPT/main/public/banner.png?token=GHSAT0AAAAAAB7JND3U3VGGF3UYYHGYO4RAZBSDJAQ" height="300"/>
+  <img src="https://raw.githubusercontent.com/reworkd/g/main/public/banner.png?token=GHSAT0AAAAAAB7JND3U3VGGF3UYYHGYO4RAZBSDJAQ" height="300"/>
 </p>
 <p align="center">
   <em>🤖 Assemble, configure, and deploy autonomous AI Agents in your browser. 🤖 </em>
 </p>
 <p align="center">
     <img alt="Node version" src="https://img.shields.io/static/v1?label=node&message=%20%3E=16.0.0&logo=node.js&color=2334D058" />
-      <a href="https://github.com/reworkd/AgentGPT/blob/master/README.md"><img src="https://img.shields.io/badge/lang-English-blue.svg" alt="English"></a>
-  <a href="https://github.com/reworkd/AgentGPT/blob/master/docs/README.zh-HANS.md"><img src="https://img.shields.io/badge/lang-简体中文-red.svg" alt="简体中文"></a>
-  <a href="https://github.com/reworkd/AgentGPT/blob/master/docs/README.hu-Cs4K1Sr4C.md"><img src="https://img.shields.io/badge/lang-Hungarian-red.svg" alt="Hungarian"></a>
+      <a href="https://github.com/reworkd/g/blob/master/README.md"><img src="https://img.shields.io/badge/lang-English-blue.svg" alt="English"></a>
+  <a href="https://github.com/reworkd/g/blob/master/docs/README.zh-HANS.md"><img src="https://img.shields.io/badge/lang-简体中文-red.svg" alt="简体中文"></a>
+  <a href="https://github.com/reworkd/g/blob/master/docs/README.hu-Cs4K1Sr4C.md"><img src="https://img.shields.io/badge/lang-Hungarian-red.svg" alt="Hungarian"></a>
 </p>
 
 <p align="center">
-<a href="https://agentgpt.reworkd.ai">🔗 Short link</a>
+<a href="https://g.reworkd.ai">🔗 Short link</a>
 <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
 <a href="#-getting-started">🤝 Contribute</a>
 <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
@@ -24,11 +24,11 @@
 ---
 
 <h2 align="center">
-💝 Support the Advancement of AgentGPT!! 💝
+💝 Support the Advancement of g!! 💝
 </h2>
 
 <p align="center">
-Join us in fueling the development of AgentGPT, an open-source project pushing the boundaries of AI autonomy! We're facing challenges in covering the operational costs 💸, including in-house API and other infrastructure expenses, which is projected to grow to around $150 USD per day 💳🤕 Your sponsorship would drive progress by helping us scale up resources, enhance features and functionality, and continue to iterate on this exciting project! 🚀
+Join us in fueling the development of g, an open-source project pushing the boundaries of AI autonomy! We're facing challenges in covering the operational costs 💸, including in-house API and other infrastructure expenses, which is projected to grow to around $150 USD per day 💳🤕 Your sponsorship would drive progress by helping us scale up resources, enhance features and functionality, and continue to iterate on this exciting project! 🚀
 </p>
 
 <p align="center">
@@ -136,7 +136,7 @@ By sponsoring this free, open-source project, you not only have the opportunity 
 
 ---
 
-AgentGPT allows you to configure and deploy Autonomous AI agents.
+g allows you to configure and deploy Autonomous AI agents.
 Name your own custom AI and have it embark on any goal imaginable.
 It will attempt to reach the goal by thinking of tasks to do, executing them, and learning from the results 🚀.
 
@@ -169,7 +169,7 @@ More Coming soon...
 
 ### 🐳 Docker Setup
 
-The easiest way to run AgentGPT locally is by using docker.
+The easiest way to run g locally is by using docker.
 A convenient setup script is provided to help you get started.
 
 ```bash
@@ -178,7 +178,7 @@ A convenient setup script is provided to help you get started.
 
 ### 👷 Local Development Setup
 
-If you wish to develop AgentGPT locally, the easiest way is to
+If you wish to develop g locally, the easiest way is to
 use the provided setup script.
 
 ```bash
@@ -191,24 +191,24 @@ use the provided setup script.
 
 1. Fork this project:
 
-- [Click here](https://github.com/reworkd/AgentGPT/fork).
+- [Click here](https://github.com/reworkd/g/fork).
 
 2. Clone the repository:
 
 ```bash
-git clone git@github.com:YOU_USER/AgentGPT.git
+git clone git@github.com:YOU_USER/g.git
 ```
 
 3. Install dependencies:
 
 ```bash
-cd AgentGPT
+cd g
 npm install
 ```
 
 4. Create a **.env** file with the following content:
 
-> 🚧 The environment variables must match the following [schema](https://github.com/reworkd/AgentGPT/blob/main/src/env/schema.mjs).
+> 🚧 The environment variables must match the following [schema](https://github.com/reworkd/g/blob/main/src/env/schema.mjs).
 
 ```bash
 # Deployment Environment:
@@ -242,7 +242,7 @@ npm run dev
 
 ### 🚀 GitHub Codespaces
 
-Set up AgentGPT in the cloud immediately by using [GitHub Codespaces](https://github.com/features/codespaces).
+Set up g in the cloud immediately by using [GitHub Codespaces](https://github.com/features/codespaces).
 
 1. From the GitHub repo, click the green "Code" button and select "Codespaces".
 2. Create a new Codespace or select a previous one you've already created.
@@ -251,8 +251,8 @@ Set up AgentGPT in the cloud immediately by using [GitHub Codespaces](https://gi
 5. When prompted in terminal, add your OpenAI API key.
 6. Click "Open in browser" when the build process completes.
 
-- To shut AgentGPT down, enter Ctrl+C in Terminal.
-- To restart AgentGPT, run `npm run dev` in Terminal.
+- To shut g down, enter Ctrl+C in Terminal.
+- To restart g, run `npm run dev` in Terminal.
 
 Run the project 🥳
 

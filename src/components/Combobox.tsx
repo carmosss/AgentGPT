@@ -54,7 +54,7 @@ const Combobox = ({
             <ComboboxPrimitive.Option
               key={opt}
               value={opt}
-              className="cursor-pointer px-2 py-2 font-mono text-sm text-white/75 hover:bg-blue-500 sm:py-3 md:text-lg"
+              className="cursor-pointer px-2 py-2 font-sans text-sm text-white/75 hover:bg-blue-500 sm:py-3 md:text-lg"
             >
               {opt}
             </ComboboxPrimitive.Option>

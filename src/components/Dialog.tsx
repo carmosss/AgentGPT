@@ -19,7 +19,7 @@ export default function Dialog({
   }
 
   return (
-    <div className="fixed inset-0 z-40 flex items-center justify-center overflow-y-auto overflow-x-hidden bg-black/70 p-3 font-mono text-white outline-none transition-all">
+    <div className="fixed inset-0 z-40 flex items-center justify-center overflow-y-auto overflow-x-hidden bg-black/70 p-3 font-sans text-white outline-none transition-all">
       <div
         className="absolute bottom-0 left-0 right-0 top-0 "
         onClick={close}
@@ -32,7 +32,7 @@ export default function Dialog({
         >
           {/*header*/}
           <div className="flex items-start justify-between rounded-t border-b-2 border-solid border-white/20 p-5">
-            <h3 className="font-mono text-3xl font-semibold">{header}</h3>
+            <h3 className="font-sans text-3xl font-semibold">{header}</h3>
             <button className="float-right ml-auto border-0 bg-transparent p-1 text-3xl font-semibold leading-none opacity-5 outline-none focus:outline-none">
               <span className="block h-6 w-6 bg-transparent text-2xl opacity-5 outline-none focus:outline-none">
                 ×

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/reworkd/AgentGPT/main/public/banner.png?token=GHSAT0AAAAAAB7JND3U3VGGF3UYYHGYO4RAZBSDJAQ" height="300"/>
+  <img src="https://raw.githubusercontent.com/reworkd/g/main/public/banner.png?token=GHSAT0AAAAAAB7JND3U3VGGF3UYYHGYO4RAZBSDJAQ" height="300"/>
 </p>
 <p align="center">
   <em>🤖 组装，配置和部署自主的 AI 代理（只需浏览器） 🤖 </em>
@@ -8,12 +8,12 @@
     <img alt="Node version" src="https://img.shields.io/static/v1?label=node&message=%20%3E=16.0.0&logo=node.js&color=2334D058" />
 </p>
 <p align="center">
-  <a href="https://github.com/reworkd/AgentGPT/blob/master/README.md"><img src="https://img.shields.io/badge/lang-English-blue.svg" alt="English"></a>
-  <a href="https://github.com/reworkd/AgentGPT/blob/master/docs/README.zh-HANS.md"><img src="https://img.shields.io/badge/lang-简体中文-red.svg" alt="简体中文"></a>
+  <a href="https://github.com/reworkd/g/blob/master/README.md"><img src="https://img.shields.io/badge/lang-English-blue.svg" alt="English"></a>
+  <a href="https://github.com/reworkd/g/blob/master/docs/README.zh-HANS.md"><img src="https://img.shields.io/badge/lang-简体中文-red.svg" alt="简体中文"></a>
 </p>
 
 <p align="center">
-<a href="https://agentgpt.reworkd.ai">🔗 短链接</a>
+<a href="https://g.reworkd.ai">🔗 短链接</a>
 <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
 <a href="#-getting-started">🤝 参与贡献</a>
 <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
@@ -25,11 +25,11 @@
 ---
 
 <h2 align="center">
-💝 支持 AgentGPT 的发展!! 💝
+💝 支持 g 的发展!! 💝
 </h2>
 
 <p align="center">
-加入我们推动 AgentGPT 的发展. 这是一个推动AI自主的开源项目！我们面临着支付运营成本的挑战 💸，包括内部 API 和其他基础设施费用，预计每天需要支付约 150 美元 💳🤕 你的赞助将帮助我们扩大资源，增强功能和不断推动这个的项目的进展！ 🚀
+加入我们推动 g 的发展. 这是一个推动AI自主的开源项目！我们面临着支付运营成本的挑战 💸，包括内部 API 和其他基础设施费用，预计每天需要支付约 150 美元 💳🤕 你的赞助将帮助我们扩大资源，增强功能和不断推动这个的项目的进展！ 🚀
 </p>
 
 <p align="center">
@@ -137,7 +137,7 @@
 
 ---
 
-AgentGPT 可以让你配置和部署 AI 代理。
+g 可以让你配置和部署 AI 代理。
 为你定制的 AI 命名，并让它执行任何可以想象的目标。
 AI 代理会先思考再执行任务。执行完任务后会学习成果 🚀.
 
@@ -170,7 +170,7 @@ AI 代理会先思考再执行任务。执行完任务后会学习成果 🚀.
 
 ### 🐳 Docker Setup
 
-Docker 是在本地运行 AgentGPT 最简单的方法。
+Docker 是在本地运行 g 最简单的方法。
 以下是一个方便的设置脚本。
 
 ```bash
@@ -179,7 +179,7 @@ Docker 是在本地运行 AgentGPT 最简单的方法。
 
 ### 👷 Local Development Setup
 
-如果你想在本地开发 AgentGPT，最简单的方法是使用以下的设置脚本。
+如果你想在本地开发 g，最简单的方法是使用以下的设置脚本。
 
 ```bash
 ./setup.sh --local
@@ -191,24 +191,24 @@ Docker 是在本地运行 AgentGPT 最简单的方法。
 
 1. 创建存储库分支:
 
-- [Click here](https://github.com/reworkd/AgentGPT/fork).
+- [Click here](https://github.com/reworkd/g/fork).
 
 2. 克隆存储库:
 
 ```bash
-git clone git@github.com:YOU_USER/AgentGPT.git
+git clone git@github.com:YOU_USER/g.git
 ```
 
 3. 安装依赖项:
 
 ```bash
-cd AgentGPT
+cd g
 npm install
 ```
 
 4. 使用以下内容创建.env:
 
-> 🚧 环境变量必须符合以下 [架构](https://github.com/reworkd/AgentGPT/blob/main/src/env/schema.mjs).
+> 🚧 环境变量必须符合以下 [架构](https://github.com/reworkd/g/blob/main/src/env/schema.mjs).
 
 ```bash
 # 部署环境:
@@ -242,7 +242,7 @@ npm run dev
 
 ### 🚀 GitHub Codespaces
 
-使用[GitHub Codespaces](https://github.com/features/codespaces)在云端设置 AgentGPT。
+使用[GitHub Codespaces](https://github.com/features/codespaces)在云端设置 g。
 
 1. 从 GitHub 存储库中，单击绿色的 "Code" 按钮并选择 "Codespaces"。
 2. 创建一个新的 Codespace 或选择之前已创建的 Codespace。
@@ -251,8 +251,8 @@ npm run dev
 5. 当终端中提示时，添加你的 OpenAI API 密钥。
 6. 当构建过程完成后，单击 "Open in browser"。
 
-- 如果要关闭 AgentGPT，请在终端中输入 Ctrl+C
-- 如果要重启 AgentGPT, 请在终端中运行 `npm run dev`。
+- 如果要关闭 g，请在终端中输入 Ctrl+C
+- 如果要重启 g, 请在终端中运行 `npm run dev`。
 
 运行该项目 🥳
 
@@ -320,4 +320,3 @@ npm run dev
   </a>
 
 </div>
-

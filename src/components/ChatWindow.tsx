@@ -101,7 +101,7 @@ const ChatWindow = ({
                 message={{
                   type: "system",
                   value:
-                    "> Create an agent by adding a name / goal, and hitting deploy!",
+                    ".",
                 }}
               />
             </Expand>
@@ -110,14 +110,14 @@ const ChatWindow = ({
                 message={{
                   type: "system",
                   value:
-                    "📢 You can provide your own OpenAI API key in the settings tab for increased limits!",
+                    ".",
                 }}
               />
-              {showDonation && (
+              {/* {showDonation && (
                 <Expand delay={0.7} type="spring">
                   <DonationMessage />
                 </Expand>
-              )}
+              )} */}
             </Expand>
           </>
         )}
@@ -169,7 +169,9 @@ const MacWindowHeader = (props: HeaderProps) => {
 
   return (
     <div className="flex items-center gap-1 overflow-hidden rounded-t-3xl p-3">
-      <PopIn delay={0.4}>
+
+
+      {/* <PopIn delay={0.4}>
         <div className="h-3 w-3 rounded-full bg-red-500" />
       </PopIn>
       <PopIn delay={0.5}>
@@ -177,8 +179,10 @@ const MacWindowHeader = (props: HeaderProps) => {
       </PopIn>
       <PopIn delay={0.6}>
         <div className="h-3 w-3 rounded-full bg-green-500" />
-      </PopIn>
-      <div className="flex flex-grow font-mono text-sm font-bold text-gray-600 sm:ml-2">
+      </PopIn> */}
+
+
+      {/* <div className="flex flex-grow font-sans text-sm font-bold text-gray-600 sm:ml-2">
         {props.title}
       </div>
       {props.onSave && (
@@ -202,7 +206,9 @@ const MacWindowHeader = (props: HeaderProps) => {
         icon={<FaClipboard size={12} />}
         text={"Copy"}
       />
-      <PDFButton messages={props.messages} />
+      <PDFButton messages={props.messages} /> */}
+
+
     </div>
   );
 };
@@ -228,7 +234,7 @@ const ChatMessage = ({ message }: { message: Message }) => {
 
   return (
     <div
-      className="mx-2 my-1 rounded-lg border-[2px] border-white/10 bg-white/20 p-1 font-mono text-sm hover:border-[#1E88E5]/40 sm:mx-4 sm:p-3 sm:text-base"
+      className="mx-2 my-1 rounded-lg border-[2px] border-white/10 bg-white/20 p-1 font-sans text-sm hover:border-[#1E88E5]/40 sm:mx-4 sm:p-3 sm:text-base"
       onMouseEnter={() => setShowCopy(true)}
       onMouseLeave={() => setShowCopy(false)}
       onClick={handleCopyClick}
@@ -239,13 +245,13 @@ const ChatMessage = ({ message }: { message: Message }) => {
           <div className="mr-2 inline-block h-[0.9em]">
             {getMessageIcon(message)}
           </div>
-          <span className="mr-2 font-bold">{getMessagePrefix(message)}</span>
+          {/* <span className="mr-2 font-bold">{getMessagePrefix(message)}</span> */}
         </>
       )}
 
       {message.type == "thinking" && (
         <span className="italic text-zinc-400">
-          (Restart if this takes more than 30 seconds)
+          {/* (Restart if this takes more than 30 seconds) */}
         </span>
       )}
 
@@ -265,41 +271,18 @@ const ChatMessage = ({ message }: { message: Message }) => {
       <div className="relative">
         {copied ? (
           <span className="absolute bottom-0 right-0 rounded-full border-2 border-white/30 bg-zinc-800 p-1 px-2 text-gray-300">
-            Copied!
-          </span>
-        ) : (
-          <span
-            className={`absolute bottom-0 right-0 rounded-full border-2 border-white/30 bg-zinc-800 p-1 px-2 ${
-              showCopy ? "visible" : "hidden"
-            }`}
-          >
             <FaCopy className="text-white-300 cursor-pointer" />
           </span>
+        ) : (
+          // <span
+          //   className={`absolute bottom-0 right-0 rounded-full border-2 border-white/30 bg-zinc-800 p-1 px-2 ${
+          //     showCopy ? "visible" : "hidden"
+          //   }`}
+          // >
+          //   <FaCopy className="text-white-300 cursor-pointer" />
+          // </span>
+          ""
         )}
-      </div>
-    </div>
-  );
-};
-
-const DonationMessage = () => {
-  const router = useRouter();
-
-  return (
-    <div className="mx-2 my-1 flex flex-col gap-2 rounded-lg border-[2px] border-white/10 bg-blue-500/20 p-1 text-center font-mono hover:border-[#1E88E5]/40 sm:mx-4 sm:p-3 sm:text-base md:flex-row">
-      <div className="max-w-none flex-grow">
-        💝️ Help support the advancement of AgentGPT. 💝
-        <br />
-        Please consider sponsoring the project on GitHub.
-      </div>
-      <div className="flex items-center justify-center">
-        <Button
-          className="sm:text m-0 rounded-full text-sm "
-          onClick={() =>
-            void router.push("https://github.com/sponsors/reworkd-admin")
-          }
-        >
-          Support now 🚀
-        </Button>
       </div>
     </div>
   );
@@ -318,18 +301,18 @@ const getMessageIcon = (message: Message) => {
   }
 };
 
-const getMessagePrefix = (message: Message) => {
-  switch (message.type) {
-    case "goal":
-      return "Embarking on a new goal:";
-    case "task":
-      return "Added task:";
-    case "thinking":
-      return "Thinking...";
-    case "action":
-      return message.info ? message.info : "Executing:";
-  }
-};
+// const getMessagePrefix = (message: Message) => {
+//   switch (message.type) {
+//     case "goal":
+//       return "Embarking on a new goal:";
+//     case "task":
+//       return "Added task:";
+//     case "thinking":
+//       return "Thinking...";
+//     case "action":
+//       return message.info ? message.info : "Executing:";
+//   }
+// };
 
 export default ChatWindow;
 export { ChatMessage };

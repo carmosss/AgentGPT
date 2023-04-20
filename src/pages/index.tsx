@@ -41,7 +41,7 @@ const Home: NextPage = () => {
   const agentUtils = useAgent();
 
   useEffect(() => {
-    const key = "agentgpt-modal-opened-new";
+    const key = "g-modal-opened-new";
     const savedModalData = localStorage.getItem(key);
 
     // Momentarily always run
@@ -104,7 +104,7 @@ const Home: NextPage = () => {
 
   const proTitle = (
     <>
-      AgentGPT<span className="ml-1 text-amber-500/90">Pro</span>
+      g<span className="ml-1 text-amber-500/90">Pro</span>
     </>
   );
 
@@ -135,10 +135,10 @@ const Home: NextPage = () => {
         close={() => setShowSettingsDialog(false)}
       />
       <main className="flex min-h-screen flex-row">
-        <Drawer
+        {/* <Drawer
           showHelp={() => setShowHelpDialog(true)}
           showSettings={() => setShowSettingsDialog(true)}
-        />
+        /> */}
         <div
           id="content"
           className="z-10 flex min-h-screen w-full items-center justify-center p-2 px-2 sm:px-4 md:px-10"
@@ -149,24 +149,24 @@ const Home: NextPage = () => {
           >
             <div
               id="title"
-              className="relative flex flex-col items-center font-mono"
+              className="relative flex flex-col items-center font-sans"
             >
               <div className="flex flex-row items-start shadow-2xl">
-                <span className="text-4xl font-bold text-[#C0C0C0] xs:text-5xl sm:text-6xl">
+                {/* <span className="text-4xl font-bold text-[#C0C0C0] xs:text-5xl sm:text-6xl">
                   Agent
                 </span>
                 <span className="text-4xl font-bold text-white xs:text-5xl sm:text-6xl">
                   GPT
-                </span>
+                </span> */}
                 <PopIn delay={0.5} className="sm:absolute sm:right-0 sm:top-2">
-                  <Badge>Beta 🚀</Badge>
+                  {/* <Badge>Beta 🚀</Badge> */}
                 </PopIn>
               </div>
-              <div className="mt-1 text-center font-mono text-[0.7em] font-bold text-white">
-                <p>
+              <div className="mt-1 text-center font-sans text-[0.7em] font-bold text-white">
+                {/* <p>
                   Assemble, configure, and deploy autonomous AI Agents in your
                   browser.
-                </p>
+                </p> */}
               </div>
             </div>
 
@@ -174,7 +174,7 @@ const Home: NextPage = () => {
               <ChatWindow
                 className="sm:mt-4"
                 messages={messages}
-                title={session?.user.subscriptionId ? proTitle : "AgentGPT"}
+                title={session?.user.subscriptionId ? proTitle : "g"}
                 showDonation={
                   status != "loading" && !session?.user.subscriptionId
                 }
@@ -199,32 +199,32 @@ const Home: NextPage = () => {
               <Expand delay={1.2}>
                 <Input
                   inputRef={nameInputRef}
-                  left={
-                    <>
-                      <FaRobot />
-                      <span className="ml-2">Name:</span>
-                    </>
-                  }
+                  // left={
+                  //   <>
+                  //     <FaRobot />
+                  //     {/* <span className="ml-2">Name:</span> */}
+                  //   </>
+                  // }
                   value={name}
                   disabled={agent != null}
                   onChange={(e) => setName(e.target.value)}
                   onKeyDown={(e) => handleKeyPress(e)}
-                  placeholder="AgentGPT"
+                  placeholder="g"
                 />
               </Expand>
               <Expand delay={1.3}>
                 <Input
-                  left={
-                    <>
-                      <FaStar />
-                      <span className="ml-2">Goal:</span>
-                    </>
-                  }
+                  // left={
+                  //   <>
+                  //     <FaStar />
+                  //     {/* <span className="ml-2">Goal:</span> */}
+                  //   </>
+                  // }
                   disabled={agent != null}
                   value={goalInput}
                   onChange={(e) => setGoalInput(e.target.value)}
                   onKeyDown={(e) => handleKeyPress(e)}
-                  placeholder="Make the world a better place."
+                  placeholder=""
                   type='textarea'
                 />
               </Expand>
@@ -237,11 +237,11 @@ const Home: NextPage = () => {
                 className="sm:mt-10"
               >
                 {agent == null ? (
-                  "Deploy Agent"
+                  "▶️"
                 ) : (
                   <>
                     <VscLoading className="animate-spin" size={20} />
-                    <span className="ml-2">Running</span>
+                    {/* <span className="ml-2">Running</span> */}
                   </>
                 )}
               </Button>
@@ -257,7 +257,7 @@ const Home: NextPage = () => {
                     <span className="ml-2">Stopping</span>
                   </>
                 ) : (
-                  "Stop agent"
+                  "⏹️"
                 )}
               </Button>
             </Expand>

@@ -6,10 +6,10 @@
 .background {
   background-image: radial-gradient(
     circle,
-    rgba(58, 58, 58, 0.75) 2px,
+    rgba(28, 28, 28, 0.75) 1em,
     transparent 0px
   );
-  background-size: 30px 30px;
+  background-size: 5em 5em;
   background-position: 0 0, 15px 15px;
 }
 
@@ -57,21 +57,21 @@ tr:nth-child(even) {
 Not supports in Firefox and IE */
 /* total width */
 div::-webkit-scrollbar {
-  border-radius: 16px;
+  border-radius: 1em;
   background-color: #464649;
-  width: 16px;
+  width: 1em;
 }
 
 /* background of the scrollbar except button or resizer */
 div::-webkit-scrollbar-track {
-  border-radius: 16px;
+  border-radius: 1em;
   background-color: #464649;
 }
 
 /* scrollbar itself */
 div::-webkit-scrollbar-thumb {
   background-color: #babac0;
-  border-radius: 16px;
+  border-radius: 1em;
   border: 2px solid #464649;
 }
 

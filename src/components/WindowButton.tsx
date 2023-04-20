@@ -16,7 +16,7 @@ const WindowButton = ({ delay, onClick, icon, text }: WindowButtonProps) => {
         onClick={onClick}
       >
         {icon}
-        <p className="font-mono">{text}</p>
+        <p className="font-sans">{text}</p>
       </div>
     </PopIn>
   );
