@@ -146,19 +146,20 @@ const Home: NextPage = () => {
           <div
             id="layout"
             className="flex h-full w-full max-w-screen-lg flex-col items-center justify-between gap-3 py-5 md:justify-center"
-          >
+            style={{ width: "100%" }}          >
             <div
               id="title"
               className="relative flex flex-col items-center font-sans"
+              style={{ width: "100%" }} 
             >
-              <div className="flex flex-row items-start shadow-2xl">
+              <div className="flex flex-row items-start shadow-2xl" style={{ width: "100%" }} >
                 {/* <span className="text-4xl font-bold text-[#C0C0C0] xs:text-5xl sm:text-6xl">
                   Agent
                 </span>
                 <span className="text-4xl font-bold text-white xs:text-5xl sm:text-6xl">
                   GPT
                 </span> */}
-                <PopIn delay={0.5} className="sm:absolute sm:right-0 sm:top-2">
+                <PopIn delay={0.5} className="sm:absolute sm:right-0 sm:top-2" style={{ width: "100%" }} >
                   {/* <Badge>Beta 🚀</Badge> */}
                 </PopIn>
               </div>
@@ -171,6 +172,7 @@ const Home: NextPage = () => {
             </div>
 
             <Expand className="flex w-full flex-row">
+            {tasks.length > 0 && <TaskWindow tasks={tasks} />}
               <ChatWindow
                 className="sm:mt-4"
                 messages={messages}
@@ -192,7 +194,7 @@ const Home: NextPage = () => {
                 }
                 scrollToBottom
               />
-              {tasks.length > 0 && <TaskWindow tasks={tasks} />}
+           
             </Expand>
 
             <div className="flex w-full flex-col gap-2 sm:mt-4 md:mt-10">
@@ -234,7 +236,7 @@ const Home: NextPage = () => {
               <Button
                 disabled={disableDeployAgent}
                 onClick={handleNewGoal}
-                className="sm:mt-10"
+                className="sm:mt-100"
               >
                 {agent == null ? (
                   "▶️"
@@ -254,7 +256,7 @@ const Home: NextPage = () => {
                 {shouldAgentStop ? (
                   <>
                     <VscLoading className="animate-spin" size={20} />
-                    <span className="ml-2">Stopping</span>
+                    <span className="ml-2">finishing...</span>
                   </>
                 ) : (
                   "⏹️"

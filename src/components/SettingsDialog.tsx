@@ -146,7 +146,7 @@ export default function SettingsDialog({
           To use the GPT-4 model, you need to also provide the API key for
           GPT-4. You can request for it&nbsp;
           <a
-            href="https://openai.com/waitlist/gpt-4-api"
+            href="https://openai.com/waitlist/gpt-3.5-turbo-api"
             className="text-blue-500"
           >
             here
